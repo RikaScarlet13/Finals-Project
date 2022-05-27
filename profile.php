@@ -1,53 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+<?php
+    include_once 'header.php';  
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src='/js/register.js'></script>
-    <script src='/js/bootstrap.js'></script>
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    
-    <link rel="stylesheet" href="/css/style.css">
-    
-
-</head>
-<body>
-        
-    <div id="wrapper">
+?>
         <div id="left" class="column">
             <div class="top-left">
                 <div class="sidebar">
                 
-                    <a class="active" href="#home">Home</a>
-                    <a href="#news">News</a>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
+                <?php include 'sidebar.php';?>
                  
-            </div>
+                </div>
             </div>
             <div class="bottom"></div>
         </div>
         <div id="right" class="column">
             <div class="top-right">
-                <div class="header">
-                    <div class="header_bg">
-                        <h1> Upload your photo</h1>
-                    </div>
-                </div>
+                
             </div>
             <div class="bottom">
                 <div class="content">
-                   
+                    
                         <div id="content_home">
                             <div class="upload_area">
                                 <div class="title_area">
                                     <h4>Title of photo</h4> <br> 
                                     <h4> Description of photo</h4>
-                                    
+                            
                                 </div>
                                 <div class="description">
                                     
@@ -56,14 +33,17 @@
                                 </div>
                                 
                             </div>
-                            <div class="button">
-                                <button type="upload" class="btn btn-primary">Select File</button>
+
+                            <div class="buttons">
+                                <div class="button">
+                                    <button type="upload" class="btn btn-primary">Select File</button>
+                                </div>
+            
+                                <div class="button">
+                                    <button type="upload" class="btn btn-primary">Upload</button>
+                                </div>
                             </div>
-        
-                            <div class="button">
-                                <button type="upload" class="btn btn-primary">Upload</button>
-                            </div>
-        
+
                         </div>
                     
                 </div> 
@@ -86,3 +66,5 @@
 
 </body>
 </html>
+
+?>
