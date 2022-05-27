@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+/* LOGIN PAGE / REGISTRATION PAGE (index.html) - Rika */
+/* START */
+/* ---------------------------------------------- */
+
+.wrapper {
+  height: auto;
+  width: auto;
+}
+
+body{
+  background-color: rgb(226, 226, 226);
+
+}
+#wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_bg{
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-label{
+  color: black;
+}
+
+.login_bg{
+  background-color: rgb(129, 129, 129);
+  border-radius: 10px;
+  margin: auto;
+  position: absolute;
+  top: 15%;
+}
+
+.login_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 10px;
+  
+}
+
+.login_form {
+  display: block;
+  align-items: center;
+  
+  padding: 25px 100px;}
+
+.register_form {
+  max-block-size: 100vh;
+  padding: 0px 100px;
+  display: none;
+}
+
+.buttons1, .buttons2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  margin-bottom: 10px;
+}
+
+button[type="register"], button[type="login"] {
+  border-radius: 10px;
+  margin: 10px;
+  margin-top: 20px;
+}
+
+/* #footer {
+  position: absolute;
+  bottom: 0%;
+} */
+
+/* ---------------------------------------------- */
+/* END */
+/* LOGIN PAGE / REGISTRATION PAGE (index.html) - Rika */
+
+/* --------------------------------------------------------------------- */
+
+/* UPLOAD PAGE (home.html) - Rika */
+/* START */
+/* ---------------------------------------------- */
+
+
+.header_home {
+  color: white;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: fixed;
+}
+
+
+
+
+.title_area{
+  padding-right: 50px;
+  padding-top: 10px;
+
+}
+
+.upload_area{
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  
+}
+
+button[type="upload"] {
+  border-radius: 10px;
+}
+
+
+input[type="title"]{
+  border-radius: 10px;
+  padding: 5px;
+  width: 500px;
+}
+
+textarea[type="description"] {
+  height: 200px;
+  display: flex;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: left;
+  resize: none;
+}
+
+
+
+
+/* ---------------------------------------------- */
+/* END */
+/* UPLOAD PAGE (home.html) - Rika */
+
+.container {
+  
+
+}
+
+.sidebar{
+  
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+#content_home {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  
+}
