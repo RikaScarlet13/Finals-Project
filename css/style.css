@@ -225,6 +225,14 @@ div.content {
 }
 
 
+.profilepicture{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 
 
 
