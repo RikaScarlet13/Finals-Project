@@ -8,8 +8,8 @@
     <script src='./js/register.js'></script>
     <script src='./js/bootstrap.js'></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    
     <link rel="stylesheet" href="./css/style.css">
+    
         
     <title>Home</title>
     
@@ -19,9 +19,9 @@
 <body>
     <div class="wrapper">
         <div id="header">
-            <div class="header_bg">
-                <h1>CERBERUS</h1>
-            </div>
+            
+                <h1>SERVERUS</h1>
+            
             
         </div>
 

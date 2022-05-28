@@ -1,15 +1,19 @@
-<?php require_once ('header.php')?>
+<?php 
+require_once('./header.php');
+
+?>
+
+
 
 
         <div id="content">
             
             <div class="login_bg">
                 <div class="login_header">
-                    <h2>Login or Sign-up</h2> 
+                    <h2>Login or Sign-up</h2>
                 </div>
                
-               
-
+            
                 <div class="login_form">
                     <div class="email">
                         <form action ="includes/login.inc.php" method="post">
