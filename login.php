@@ -1,11 +1,8 @@
 <?php 
 require_once('./header.php');
+include './includes/config.php';
 
 ?>
-
-
-
-
         <div id="content">
             
             <div class="login_bg">
@@ -16,19 +13,18 @@ require_once('./header.php');
             
                 <div class="login_form">
                     <div class="email">
-                        <form action ="includes/login.inc.php" method="post">
+                        <form action ="handlers/login_validate.php" method="post">
                             <label for="inputEmail" class="form-label mt-1">Email address</label>
-                            <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                         
                         </div>
                         <div class="password">
                             <label for="inputPassword1" class="form-label mt-4">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
 
                         <div class="buttons1">
                             <button type="login" name="submit" class="btn btn-primary">Login</button>
-
                             <a href="#" id="signup" class="signup">Need an account? Register here</a>
                         </div>
                     </form>
