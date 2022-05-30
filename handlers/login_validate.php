@@ -7,7 +7,6 @@ if (isset($_SESSION['email'])){
     header("Location: /Finals-Project/newsfeed.php");
 }
 
-
 if (isset($_POST['email']))
 {
     $email = stripslashes($_POST['email']);
