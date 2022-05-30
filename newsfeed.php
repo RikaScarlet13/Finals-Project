@@ -1,5 +1,7 @@
 <?php
-    include_once 'header.php';  
+session_start();
+include 'includes/config.php';
+include 'header.php'; 
 
 ?>
         <div id="left" class="column">
@@ -13,10 +15,7 @@
                 <div class="content">
                     
                         <div class="nscontainer">
-                            
-
-                                <div class="post-body">
-                                <div class="title">
+                            <div class="title">
                                 <div class="profile">
                                     <div class="profilename">
                                         Testing yarn
@@ -34,6 +33,9 @@
 
                                 </div>
 
+
+                                <div class="post-body">
+      
                             <div class="user-info">
                             
                             
@@ -52,6 +54,22 @@
                                 </div>
 
                             <div class="likes-comment-share-icons">
+                                <div class="like"></div>
+                                <span class="fas fa-thumbs-up"></span>
+                                <i>Like</i>
+                            </div>
+
+                            
+                            </div>
+                            
+                            
+                                
+                            </div>
+
+
+
+
+                            </div>
                             <div class="commentsec">
                                 <div class="like">
                                     may nag like
@@ -109,20 +127,6 @@
 
                             </div>
                         </div>
-                            </div>
-
-                            
-                            </div>
-                            
-                            
-                                
-                            </div>
-
-
-
-
-                            </div>
-                            
 
                     
                 </div> 
