@@ -20,7 +20,7 @@
     <div class="wrapper">
         <div id="header">
             
-                <h1>SERVERUS</h1>
+                <h1>CERVERUS</h1>
             
             
         </div>
