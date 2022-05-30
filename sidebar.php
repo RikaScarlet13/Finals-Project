@@ -1,7 +1,7 @@
 <div class="top-left">
                 <div class="sidebar">
                     <!-- <div class="profilepicture">
-                        <img src='./images/profilepic/romil.png'>
+                        <img src='./images/profilepic/spy-x-family-anya-heh-anime.jpg'>
 
                     </div> -->
                     <a href="profile.php">Profile</a>

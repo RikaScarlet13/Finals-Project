@@ -128,8 +128,8 @@ h1 {
 .title_area{
   display: flex;
   flex-direction: column;
-  padding-right: 50px;
-  padding-top: 10px;
+  
+  
   
 }
 
@@ -223,6 +223,9 @@ div.content {
 
 .description {
   overflow: inherit;
+  display: flex;
+  flex-direction: row;
+
 }
 
 
@@ -239,18 +242,18 @@ div.content {
 }
 
 
-.profilepicture{
+/* .profilepicture{
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 
 
 
 
 /* SIDE-BAR MEDIAQ START */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1100px) {
   .sidebar {
     width: 100%;
     height: auto;
@@ -259,26 +262,44 @@ div.content {
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 
-  #content_home{
-    display: flex;
-    flex-direction: column;
-    
-  }
+  
   .buttons{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
+  .upload_area, .description{
+    display: flex;
+    flex-direction: column;
+    
+  }
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .sidebar a {
     text-align: center;
     float: none;
+    
   }
+
+  #content_home {
+    min-width:400px;
+    display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  object-fit: contain;
+  overflow: inherit;
+  position:relative;
+  top:50px;
+    
+}
+
+  
+  
 }
 
 
@@ -333,9 +354,8 @@ img {
 }
 
 .picturesize {
-  width: 700px;
-  min-height: auto;
-  max-height: auto;
+  max-width: 600px;
+  min-height: 250px;
   float: left;
   margin: 3px;
   padding: 3px;
@@ -424,11 +444,11 @@ margin-left: 3.5rem;
 
 }
 
-.description{
+/* .description{
   position: relative;
   padding:0.5rem;
 
-}
+} */
 
 .upload-img{
   position: relative;
@@ -517,11 +537,11 @@ color: antiquewhite;
   display: block;
 }
 .avatar_comment img{
-  height: 48px;
-  width: 48px;
+  min-height: 40px;
+  min-width: 40px;
 }
 .box_comment{
-   display: block;
+    display: block;
     position: relative;
     line-height: 1.358;
     word-break: break-word;
@@ -530,7 +550,6 @@ color: antiquewhite;
     background: #fff;
     box-sizing: border-box;
     cursor: text;
-    font-family: Helvetica, Arial, sans-serif;
     font-size: 16px;
    padding: 0;
 }
@@ -655,6 +674,21 @@ color: antiquewhite;
   vertical-align: middle;
   border-radius: 2px;
 }
+
+
+.post-body{
+
+  max-width: 80%;
+  max-height: 80%;
+  box-shadow: 2px 2px 12px 0px gray;
+  overflow: hideen;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 9px
+  
+}
+
+
 
 
 /* POST CSS END */

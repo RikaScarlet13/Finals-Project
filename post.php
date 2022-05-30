@@ -13,7 +13,39 @@
                 <div class="content">
                     
                         <div class="nscontainer">
+
+                        
+
+
                             <div class="col-md-12" id="fbcomment">
+
+                            <div class="post_detail">
+        <img src="./images/postedimages/nct2020.jpg" class="upload-img">
+      
+        <div class="likes-comment-preview">
+          <div class="likes-preview">
+            <span class="fas fa-thumbs-up"></span>
+            <span class="fas fa-heart"></span>
+            <span class="count-likes">26</span>
+          </div>
+
+          <div class="comment-share-preview">
+           <span>23 comments</span23>
+            <span>23 shares</span23>
+
+          </div>
+        </div>
+
+      <div class="likes-comment-share-icons">
+        <div class="like"></div>
+        <span class="fas fa-thumbs-up"></span>
+        <i>Like</i>
+      </div>
+
+      <div class="comments"></div>
+        <span class="fas fa-comments"></span>
+        <i>Comment</i>
+      </div>
                                     <div class="header_comment">
                                         <div class="row">
                                             <div class="col-md-6 text-left">
