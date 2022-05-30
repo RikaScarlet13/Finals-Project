@@ -1,9 +1,10 @@
 <?php
-    include_once 'header.php';  
+include_once 'header.php';
+
 
 ?>
         <div id="left" class="column">
-            <?php include 'sidebar.php';?>
+            <?php include 'sidebar.php'; ?>
         </div>
         <div id="right" class="column">
             <div class="top-right">
