@@ -1,7 +1,12 @@
 <?php
 session_start();
+// if (!isset($_SESSION['email'])){
+//     header("Location: login.php");
+//   }
 include 'includes/config.php';
 include 'header.php'; 
+require 'handlers/check_session.php';
+$user_data = check_login($conn);
 
 ?>
         <div id="left" class="column">

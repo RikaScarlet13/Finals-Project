@@ -1,6 +1,8 @@
 <?php 
 require_once('./header.php');
-include './includes/config.php';
+// include './includes/config.php';
+include 'handlers/login_validate.php';
+include 'handlers/check_session.php';
 
 ?>
         <div id="content">
@@ -13,7 +15,7 @@ include './includes/config.php';
             
                 <div class="login_form">
                     <div class="email">
-                        <form action ="handlers/login_validate.php" method="post">
+                        <form action ="login.php" method="post">
                             <label for="inputEmail" class="form-label mt-1">Email address</label>
                             <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                         
