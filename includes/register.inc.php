@@ -28,8 +28,13 @@ if (isset($_POST["submit"])){
         exit();
     }
 
-    if (userTaken($conn, $email) == false) {
+    if (userTaken($conn, $email) == true) {
         header("Location: ../login.php?error=userTaken");
+        exit();
+    }
+
+    if(password_length($password) !== false) {
+        header("Location: ../login.php?error=passwordlength");
         exit();
     }
 

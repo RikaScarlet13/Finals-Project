@@ -1,5 +1,6 @@
 <?php
 
+require_once 'config.php';
 function emptyInputRegister ($firstname, $lastname, $email, $password, $password2) {
     
     $result;
@@ -49,10 +50,8 @@ function userTaken($conn, $email) {
     while(mysqli_num_rows($check_user) > 0) {
         $i++;
         $email = $email . $i;  
-        $check_user= mysqli_query($conn, "SELECT * FROM users where username='{$email}'");
-
-
-
+        $check_user= mysqli_query($conn, "SELECT * FROM users where email='{$email}'");
+        return true;
 }
 }
 
@@ -63,11 +62,23 @@ function createUser($conn, $firstname, $lastname, $email, $password) {
     $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
     // Reads the statement if its true
-    $sql = "insert into users value('','$firstname', '$lastname','$email', '$password',)";
+    $sql = "insert into users value('','$firstname', '$lastname','$email', MD5('$password'))";
 
         mysqli_query($conn,$sql);
 
         $success= true;
         header("Location: ../login.php");
         exit();
+}
+
+function password_length($password) {
+    $result;
+
+    if (strlen($password) < 8) {
+        $result = true;
+    }
+    else {
+        $result = false;
+    }
+    return $result;
 }

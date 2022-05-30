@@ -3,6 +3,7 @@ require_once('./header.php');
 // include './includes/config.php';
 include 'handlers/login_validate.php';
 include 'handlers/check_session.php';
+include 'includes/functions.inc.php';
 
 ?>
         <div id="content">
