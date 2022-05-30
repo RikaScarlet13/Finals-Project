@@ -24,36 +24,21 @@
       
         <div class="likes-comment-preview">
           <div class="likes-preview">
-            <span class="fas fa-thumbs-up"></span>
-            <span class="fas fa-heart"></span>
+            <span  onclick="myFunction(this)" class="fa fa-thumbs-up"></span>
             <span class="count-likes">26</span>
           </div>
 
           <div class="comment-share-preview">
+        <span  onclick="myFunction(this)" class="fa fa-comment-o"></span>
            <span>23 comments</span23>
+            <span  onclick="myFunction(this)" class="fa fa-share-square-o"></span>
             <span>23 shares</span23>
 
           </div>
         </div>
 
-      <div class="likes-comment-share-icons">
-        <div class="like"></div>
-        <span class="fas fa-thumbs-up"></span>
-        <i>Like</i>
-      </div>
-
-      <div class="comments"></div>
-        <span class="fas fa-comments"></span>
-        <i>Comment</i>
-      </div>
-                                    <div class="header_comment">
-                                        <div class="row">
-                                            <div class="col-md-6 text-left">
-                                                <span class="count_comment">264235 Comments</span>
-                                            </div>
-                                        
-                                        </div>
-                                    </div>
+    
+                                    
                             </div>
                             
                             <div class="body_comment">

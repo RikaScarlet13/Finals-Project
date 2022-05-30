@@ -17,27 +17,35 @@
 
                                 <div class="post-body">
                                 <div class="title">
-                                <div class="profile">
-                                    <div class="profilename">
-                                        Testing yarn
-                                    </div>
-                                    <div class="timeposted">
-                                        time yarn
+                                <div class="d-flex justify-content-between p-2 px-3">
+                        <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Mr.Cheddar</span></div>
+                    </div>
+                    <div class="d-flex flex-row mt-1 ellipsis"> <small class="mr-2">20 mins</small> <i class="fa fa-ellipsis-h"></i> </div>
+                    <div class="p-2">
+                      <p class="text-justify">Hello! My name is Cheddar! And i am a 1 year old french bull doggo. Nice to meet you all! &#128512; &#128525; </p>           
+                </div>
 
-                                    </div>
+
+                                <div class="profile">
+                                    
 
                                 </div>
                             </div>
                             <div class="mainpicture">
                                 <div class="picturesize">
-                                    <img src="./images/postedimages/Ma'am Diana.png" alt="postedpicture">
+                                    <img src="./images/postedimages/CHEDDONKEY.jpg" alt="postedpicture">
 
                                 </div>
 
                             <div class="user-info">
                             
                             
-                                <div class="likes-comment-preview">
+                                
+
+                            <div class="likes-comment-share-icons">
+                                
+                            <div class="commentsec">
+                            <div class="likes-comment-preview">
                                 <div class="likes-preview">
                                     <span class="fas fa-thumbs-up"></span>
                                     <span class="fas fa-heart"></span>
@@ -50,9 +58,6 @@
 
                                 </div>
                                 </div>
-
-                            <div class="likes-comment-share-icons">
-                            <div class="commentsec">
                                 <div class="like">
                                     may nag like
 
@@ -100,7 +105,7 @@
                                                     <span>26m</span>
                                                 </div>
                                                 
-                                                <a href="post.php">Load post</a>
+                                                
 
                                                 </div>
                                     </div>
@@ -110,7 +115,7 @@
                             </div>
                         </div>
                             </div>
-
+<a href="post.php">Load post</a>
                             
                             </div>
                             
