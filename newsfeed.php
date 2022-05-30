@@ -8,7 +8,6 @@ include 'header.php';
 require 'handlers/check_session.php';
 $user_data = check_login($conn);
 
-
 ?>
         <div id="left" class="column">
             <?php include 'sidebar.php';?>
