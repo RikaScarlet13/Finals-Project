@@ -1,9 +1,12 @@
 <?php
+
 session_start();
-require '../includes/config.php';
+require './includes/config.php';
+
 if (isset($_SESSION['email'])){
     header("Location: /Finals-Project/newsfeed.php");
 }
+
 
 if (isset($_POST['email']))
 {
@@ -19,7 +22,12 @@ if (isset($_POST['email']))
             $returned_row = mysqli_fetch_assoc($result);
             if($returned_row['password'] === md5($password)){
                 $_SESSION['id'] = $returned_row['id'];
-                $_SESSION['username'] = $returned_row['username'];
+                $_SESSION['email'] = $returned_row['email'];
+                echo "
+                    <script type=\"application/javascript\">
+                        alert('$_SESSION');
+                    </script>
+                ";
                 header("Location: /Finals-Project/newsfeed.php");
                 die;
             }
