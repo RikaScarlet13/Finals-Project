@@ -785,6 +785,47 @@ color: black;
   } */
 
 
+/* COMMENT SECTION */
 
+textarea{
+width: 400px;
+height: 80px;
+background-color: gray;
+resize: none;
+
+
+}
+
+button {
+  width:100px;
+  height: 30px;
+  background-color: gray;
+  border: none;
+  color: white;
+  margin-bottom: 60px;
+}
+
+.userfont {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-box {
+  width: 845px;
+  padding: 15px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  background-color: white;
+
+}
+
+.comment-box p{
+  font-size: 14px;
+  line-height: 16px;
+  color: gray;
+  font-weight: 100;
+  
+}
+/* COMMENT SECTION */
 
   

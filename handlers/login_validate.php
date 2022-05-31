@@ -4,7 +4,7 @@ session_start();
 require './includes/config.php';
 
 if (isset($_SESSION['email'])){
-    header("Location: /Finals-Project/newsfeed.php");
+    header("Location: /finalsProject/newsfeed.php");
 }
 
 
