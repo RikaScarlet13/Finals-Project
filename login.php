@@ -11,8 +11,30 @@ include 'includes/functions.inc.php';
             <div class="login_bg">
                 <div class="login_header">
                     <h2>Login or Sign-up</h2>
+                    <div class="error">
+                
+                    <?php
+                        if (isset($_GET["error"])){
+                            if ($_GET["error"] == "emptyinput"){
+                                echo "<p>Fill in all the fields!</p>";
+                            }
+                            else if($_GET["error"] == "passworddontmatch"){
+                                echo "<p> Passwords do not match.</p>";
+                            }
+                            else if($_GET["error"] == "passwordlength"){
+                                echo "<p> Password is too short. At least 8 or more characters needed.</p>";
+                            }
+                            else if($_GET["error"] == "userTaken"){
+                                echo "<p> User is taken. Please try again.</p>";
+                            }
+                        }
+                    
+                    ?>
+                    </div>
                 </div>
                
+               
+
             
                 <div class="login_form">
                     <div class="email">
@@ -32,6 +54,9 @@ include 'includes/functions.inc.php';
                         </div>
                     </form>
                 </div>
+
+                
+
 
                 <div class="register_form">
                     <form action="includes/register.inc.php" method="post">
@@ -63,13 +88,6 @@ include 'includes/functions.inc.php';
             </div>
 
         </div>
-
-
-
-        <!-- <div id="footer">
-            This is the footer
-        </div> -->
-
     </div>
     
 </body>
