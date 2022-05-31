@@ -102,5 +102,3 @@
 </div>
 </body>
 </html>
-index2.php
-Displaying index2.php.

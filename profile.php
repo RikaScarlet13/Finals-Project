@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 // if (!isset($_SESSION['email'])){
@@ -6,7 +5,7 @@ session_start();
 //   }
 include 'includes/config.php';
 include 'header.php'; 
-require 'handlers/upload.php';
+require 'handlers/upload_post.php';
 require 'handlers/check_session.php';
 
 $user_data = check_login($conn);
@@ -22,7 +21,7 @@ $user_data = check_login($conn);
             <!--
             
             <div id="right" class="column">
-                
+
                 <div class="bottom">
                     <div class="content">
                         
@@ -56,21 +55,21 @@ $user_data = check_login($conn);
             </div>
              -->
         <div class="form-wrapper">
-            <form action="profile.php" method="post" id="main-form-container">
+            <form action="profile.php" method="post" enctype="multipart/form-data" id="main-form-container">
                 <div class="form-block form-title">
                     <label for="title">Title of the Photo</label>
-                    <input type="text" name="title" id="title-field">
+                    <input type="text" name="image_title" id="title-field">
                 </div>
                 
                 <div class="form-block form-text">
                     <label for="text">Description</label>
-                    <textarea name="text-description" id="text-desc-field" cols="30" rows="13"></textarea>
+                    <textarea name="image_text" id="text-desc-field" cols="30" rows="13"></textarea>
                 </div>
 
                 <div class="form-block form-image">
                     <label for="image">Image</label>
-                    <input type="file" name="my_image" id="choose-file-btn">
-                    <button type="submit" name="submit" id="upload-btn">Upload</button>
+                    <input type="file" name="image" id="choose-file-btn">
+                    <button type="submit" name="upload" id="upload-btn">Upload</button>
                 </div>
             </form> 
         </div>
