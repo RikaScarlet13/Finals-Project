@@ -28,7 +28,10 @@ if (isset($_POST['email']))
                         alert('$_SESSION');
                     </script>
                 ";
-                header("Location: /Finals-Project/newsfeed.php");
+               
+
+                
+                header("Location: /finalsProject/newsfeed.php");
                 die;
             }
             else{
