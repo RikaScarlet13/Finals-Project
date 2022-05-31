@@ -9,15 +9,28 @@ require 'handlers/check_session.php';
 $user_data = check_login($conn);
 
 ?>
-<div id="left" class="column">
-    <?php include 'sidebar.php';?>
-</div>
-<div id="right" class="column">
-    <div class="top-right"></div>
-    <div class="bottom">
-        <div class="content">
+        <div id="left" class="column">
+            <?php include 'sidebar.php';?>
+        </div>
+        <div id="right" class="column">
+            <div class="top-right">
+                
+            </div>
+            <div class="bottom">
+                <div class="content">
+                    
+                        <div class="nscontainer">
+                            
 
-            <div class="nscontainer">
+                                <div class="post-body">
+                                <div class="title">
+                                <div class="d-flex justify-content-between p-2 px-3">
+                        <div class="d-flex flex-column ml-2"> <span class="font-weight-bold">Mr.Cheddar</span></div>
+                    </div>
+                    <div class="d-flex flex-row mt-1 ellipsis"> <small class="mr-2">20 mins</small> <i class="fa fa-ellipsis-h"></i> </div>
+                    <div class="p-2">
+                      <p class="text-justify">Hello! My name is Cheddar! And i am a 1 year old french bull doggo. Nice to meet you all! &#128512; &#128525; </p>           
+                </div>
 
 
                 <div class="post-body">
@@ -129,9 +142,20 @@ $user_data = check_login($conn);
 
 
                         </div>
-                    </div>
-                </div>
+                            </div>
+<a href="post.php">Load post</a>
+                            
+                            </div>
+                            
+                            
+                                
+                            </div>
 
+
+
+
+                            </div>
+                            
 
             </div>
 
