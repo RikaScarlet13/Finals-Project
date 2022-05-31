@@ -72,7 +72,9 @@ $user_data = check_login($conn);
                                                         <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
                                                     </div>
                                                     <div class="box_comment col-md-11">
-                                                    <textarea class="commentar" placeholder="Add a comment..."></textarea>
+                                                    <textarea class="commentar" placeholder="Add a comment...">
+
+                                                    </textarea>
                                                     <div class="box_post">
                                                         <div class="pull-right">
                                                             <span>

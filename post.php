@@ -1,5 +1,10 @@
 <?php
+session_start();
 include_once 'header.php';
+date_default_timezone_set('Asia/Manila');
+include './includes/comments.inc.php';
+
+
 ?>
 <div id="left" class="column">
     <?php include 'sidebar.php'; ?>
@@ -114,6 +119,66 @@ include_once 'header.php';
 
                                     </li>
 
+                                                                <div class="result_comment col-md-11">
+                                                                    <h4>Sugito</h4>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                        <div class="tools_comment">
+                                                                        <a class="like" href="#">Like</a>
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <a class="replay" href="#">Reply</a>
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <span>26m</span>
+                                                                        </div>
+                                                                    <ul class="child_replay"></ul>
+                                                                </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </li>
+                                                    
+                                                    <!-- Start List Comment 2 -->
+                                                    <?php
+                                                        if (isset($_SESSION['id'])){
+                                                            echo "<form method='POST' action='".setComments($conn)."'>
+                                                                <input type='hidden' name='username' value='".$_SESSION['id']."'>
+                                                                <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+                                                                <textarea name ='comment'></textarea>
+                                                                <br>
+                                                                <button type='submit' name='commentSubmit'>Comment</button>
+                                                            </form>";
+                                                        } else {
+                                                            echo "you need to be logged in";
+                                                    }
+                                                    getComments($conn);
+
+                                                    ?>
+                                                        <!-- <li class="box_result row">
+                                                            <div class="avatar_comment col-md-1">
+                                                            <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                                            </div>
+                                                                <div class="result_comment col-md-11">
+                                                                <h4>Gung Wah</h4>
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                    <div class="tools_comment">
+                                                                        <a class="like" href="#">Like</a>
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <a class="replay" href="#">Reply</a>
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
+                                                                        <span aria-hidden="true"> · </span>
+                                                                        <span>26m</span>
+                                                                    </div>
+                                                                <ul class="child_replay"></ul>
+                                                                </div>
+                                                        </li> -->
+                                                </ul>
+                                                <button class="show_more" type="button">Load 10 more comments</button>
+                                            </div>
+
+                                            
                                     <!-- Start List Comment 2 -->
                                     <li class="box_result row">
                                         <div class="avatar_comment col-md-1">
@@ -149,5 +214,13 @@ include_once 'header.php';
                 </div>
             </div>
         </div>
-    </div>
-</div></body></html>
+
+
+        
+
+
+
+
+        
+    </body>
+</html>
