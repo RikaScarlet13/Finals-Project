@@ -31,7 +31,7 @@ if (isset($_POST['email']))
                
 
                 
-                header("Location: /finalsProject/newsfeed.php");
+                header("Location: /Finals-Project/newsfeed.php");
                 die;
             }
             else{

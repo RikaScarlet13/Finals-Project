@@ -16,6 +16,6 @@ function check_login($conn){
     }
     //redirect to index
     header("Location: login.php");
-    
+
 }
 ?>

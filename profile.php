@@ -6,16 +6,20 @@ session_start();
 //   }
 include 'includes/config.php';
 include 'header.php'; 
+require 'handlers/upload.php';
 require 'handlers/check_session.php';
+
 $user_data = check_login($conn);
 
 ?>  
-            <div id="left" class="column">
+             <div id="left" class="column">
                 <div class="top-left">
                     <?php include 'sidebar.php';?>
                 </div>
                 <div class="bottom"></div>
             </div>
+            
+            <!--
             
             <div id="right" class="column">
                 
@@ -50,13 +54,29 @@ $user_data = check_login($conn);
                     </div> 
                 </div>
             </div>
+             -->
+        <div class="form-wrapper">
+            <form action="profile.php" method="post" id="main-form-container">
+                <div class="form-block form-title">
+                    <label for="title">Title of the Photo</label>
+                    <input type="text" name="title" id="title-field">
+                </div>
+                
+                <div class="form-block form-text">
+                    <label for="text">Description</label>
+                    <textarea name="text-description" id="text-desc-field" cols="30" rows="13"></textarea>
+                </div>
 
-
-        
-            
-            
-            
+                <div class="form-block form-image">
+                    <label for="image">Image</label>
+                    <input type="file" name="my_image" id="choose-file-btn">
+                    <button type="submit" name="submit" id="upload-btn">Upload</button>
+                </div>
+            </form> 
         </div>
+
+
+
 
     </body>
 </html>
