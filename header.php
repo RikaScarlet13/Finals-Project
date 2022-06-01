@@ -10,7 +10,7 @@
     <script src='./js/register.js'></script>
     <script src='./js/bootstrap.js'></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/profile.css">
     
         

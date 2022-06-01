@@ -8,13 +8,9 @@ function setComments($conn) {
         $date = $_POST['date'];
         $comment = $_POST['comment'];
 
-
         $sql = "INSERT INTO comments (username, date, comment) VALUES ('$user_id', '$date', '$comment')";
         $result = $conn->query($sql);
     }
-
-
-
 
 }
 

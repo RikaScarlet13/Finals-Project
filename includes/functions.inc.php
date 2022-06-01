@@ -82,3 +82,7 @@ function password_length($password) {
     }
     return $result;
 }
+
+
+// ==== POST VALIDATION =====
+
