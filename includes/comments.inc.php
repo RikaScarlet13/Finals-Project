@@ -24,14 +24,14 @@ function getComments($conn){
     
     while ($row = $result->fetch_assoc()) {
         
-        $id = $row['first_name'];
-        $sql2 = "SELECT * FROM users WHERE id='$id'";
+        $id = $row['user_id'];
+        $sql2 = "SELECT * FROM users WHERE user_id='$id'";
         $result2 = $conn->query($sql2);
         
         if ($row2 = $result2->fetch_assoc()) {
             echo "<div class= 'comment-box' >";
                 echo "<div class = userfont";
-                    echo $row2['id']."<br>";
+                    echo $row2['username']."<br>";
                     echo $row['date']."<br>";
                 echo "</div>";
             echo "<p>";

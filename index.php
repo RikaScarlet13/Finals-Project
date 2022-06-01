@@ -10,6 +10,7 @@ comment TEXT not null
     date_default_timezone_set('Asia/Manila');
     include './includes/comments.inc.php';
     include './includes/config.php';
+    
    
     session_start();
 ?>

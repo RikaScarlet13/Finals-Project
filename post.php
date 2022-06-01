@@ -141,20 +141,20 @@ include './includes/comments.inc.php';
                                                     
                                                     <!-- Start List Comment 2 -->
                                                     <?php
-                                                        if (isset($_SESSION['id'])){
-                                                            echo "<form method='POST' action='".setComments($conn)."'>
-                                                                <input type='hidden' name='username' value='".$_SESSION['id']."'>
-                                                                <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
-                                                                <textarea name ='comment'></textarea>
-                                                                <br>
-                                                                <button type='submit' name='commentSubmit'>Comment</button>
-                                                            </form>";
-                                                        } else {
-                                                            echo "you need to be logged in";
-                                                    }
-                                                    getComments($conn);
+    if (isset($_SESSION['id'])){
+        echo "<form method='POST' action='".setComments($conn)."'>
+            <input type='hidden' name='username' value='".$_SESSION['id']."'>
+            <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
+            <textarea name ='comment'></textarea>
+            <br>
+            <button type='submit' name='commentSubmit'>Comment</button>
+        </form>";
+    } else {
+        echo "you need to be logged in";
+}
+getComments($conn);
 
-                                                    ?>
+?>
                                                         <!-- <li class="box_result row">
                                                             <div class="avatar_comment col-md-1">
                                                             <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>

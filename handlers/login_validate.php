@@ -23,7 +23,9 @@ if (isset($_POST['email']))
             if($returned_row['password'] === md5($password)){
                 $_SESSION['id'] = $returned_row['id'];
                 $_SESSION['email'] = $returned_row['email'];
+                $_SESSION['username'] = $returned_row['first_name']." ". $returned_row['last_name'];
                 echo "
+                
                     <script type=\"application/javascript\">
                         alert('$_SESSION');
                     </script>
@@ -31,7 +33,7 @@ if (isset($_POST['email']))
                
 
                 
-                header("Location: /Finals-Project/newsfeed.php");
+                header("Location: /finalsProject/newsfeed.php");
                 die;
             }
             else{
