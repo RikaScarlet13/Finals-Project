@@ -27,9 +27,9 @@ comment TEXT not null
 <body>
 
 <?php
-    if (isset($_SESSION['first_name'])){
+    if (isset($_SESSION['id'])){
         echo "<form method='POST' action='".setComments($conn)."'>
-            <input type='hidden' name='username' value='".$_SESSION['first_name']."'>
+            <input type='hidden' name='username' value='".$_SESSION['id']."'>
             <input type='hidden' name='date' value='".date('Y-m-d H:i:s')."'>
             <textarea name ='comment'></textarea>
             <br>
