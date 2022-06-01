@@ -8,7 +8,7 @@
   //Function
 
   function isFileAllowed($file){
-    $allowed_files = array('jpg', 'jpeg', 'png');
+    $allowed_files = array('jpg', 'jpeg', 'png', 'gif');
     $fileName = $file;
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
@@ -26,6 +26,7 @@
   if (isset($_POST['upload'])) {
   	// Get image name
   	$image = $_FILES['image']['name'];
+	$current_user = $_SESSION['username'];
 
 		if(isFileAllowed($image) == true){
 			$image_text = mysqli_real_escape_string($db, $_POST['image_text']);
@@ -40,7 +41,7 @@
 			  // image file directory
 			  $target = "images/".$newFileName;
 		
-			  $sql = "INSERT INTO images (image, image_text, image_title) VALUES ('$image', '$image_text', '$image_title')";
+			  $sql = "INSERT INTO post (image, title, description, author) VALUES ('$newFileName', '$image_title', '$image_text', '$current_user')";
 			  // execute query
 			  mysqli_query($db, $sql);
 		
@@ -53,5 +54,5 @@
 
   	// Get text
   }
-  $result = mysqli_query($db, "SELECT * FROM images");
+//   $result = mysqli_query($db, "SELECT * FROM post");
 ?>

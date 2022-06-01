@@ -73,7 +73,7 @@ $user_data = check_login($conn);
                         <?php
                         if(isset($_GET['error'])){
                             if($_GET['error'] == "FileTypeError"){
-                                echo '<p>File type is not allowed, Please select an image file.</p>';
+                                echo '<p style="width: 100%; padding: 10px; text-align: center; color: #842029; background-color: #F8D7DA;">File type is not allowed, Please select an image file.</p>';
                             }
                         }
                         ?>

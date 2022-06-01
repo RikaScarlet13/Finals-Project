@@ -15,16 +15,14 @@
     
         
     <title>Home</title>
-    <script src="jquery-3.2.1.min.js"></script>
+
+    
 
 
 </head>
 <body>
     <div class="wrapper">
         <div id="header">
-            
                 <h1>CERVERUS</h1>
-            
-            
         </div>
 

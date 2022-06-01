@@ -4,22 +4,20 @@ session_start();
 //     header("Location: login.php");
 //   }
 include 'includes/config.php';
-include 'header.php'; 
+// include 'handlers/retrieve.php';
 require 'handlers/check_session.php';
 $user_data = check_login($conn);
 
 ?>
-        <div id="left" class="column">
-            <?php include 'sidebar.php';?>
-        </div>
-        <div id="right" class="column">
-            <div class="top-right">
-                
-            </div>
-            <div class="bottom">
-                <div class="content">
-                    
-                        <div class="nscontainer">
+<!-- <div id="left" class="column">
+    <?//php include 'sidebar.php';?>
+</div>
+<div id="right" class="column">
+    <div class="top-right"></div>
+    <div class="bottom">
+        <div class="content">
+
+            <div class="nscontainer">
 
                 <div class="post-body">
                     <div class="title">
@@ -33,7 +31,8 @@ $user_data = check_login($conn);
                             <i class="fa fa-ellipsis-h"></i>
                         </div>
                         <div class="p-2">
-                            <p class="text-justify">Hello! My name is Cheddar! And i am a 1 year old french bull doggo. Nice to meet you all! &#128512; &#128525;</p>
+                            <p class="text-justify">Hello! My name is Cheddar! And i am a 1 year old french bull doggo.
+                                                                Nice to meet you all! &#128512; &#128525;</p>
                         </div>
 
 
@@ -41,8 +40,7 @@ $user_data = check_login($conn);
                     </div>
                     <div class="mainpicture">
                         <div class="picturesize">
-                            <img src="./images/postedimages/CHEDDONKEY.jpg" alt="postedpicture">
-                        </div>
+                            <img src="./images/postedimages/CHEDDONKEY.jpg" alt="postedpicture"></div>
 
                             <div class="user-info">
 
@@ -51,20 +49,20 @@ $user_data = check_login($conn);
 
                                     <div class="commentsec">
                                         <div class="likes-comment-preview">
-                                        <div class="likes-preview">
-                                                <span  onclick="myFunction(this)" class="fa fa-thumbs-up"></span>
+                                            <div class="likes-preview">
+                                                <span onclick="myFunction(this)" class="fa fa-thumbs-up"></span>
                                                 <span class="count-likes">26</span>
                                             </div>
 
                                             <div class="comment-share-preview">
-                                                <span  onclick="myFunction(this)" class="fa fa-comment-o"></span>
+                                                <span onclick="myFunction(this)" class="fa fa-comment-o"></span>
                                                 <span>23 comments</span23>
-                                                    <span  onclick="myFunction(this)" class="fa fa-share-square-o"></span>
-                                                    <span>23 shares</span23>
+                                                <span onclick="myFunction(this)" class="fa fa-share-square-o"></span>
+                                                <span>23 shares</span23>
 
                                             </div>
                                         </div>
-                                        
+
                                         <div class="comment">
                                             <div class="body_comment">
                                                 <div class="row">
@@ -72,26 +70,23 @@ $user_data = check_login($conn);
                                                         <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
                                                     </div>
                                                     <div class="box_comment col-md-11">
-                                                    <textarea class="commentar" placeholder="Add a comment...">
-
-                                                    </textarea>
-                                                    <div class="box_post">
-                                                        <div class="pull-right">
-                                                            <span>
-                                                            <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar" />
-                                                            <i class="fa fa-caret-down"></i>
-                                                            </span>
-                                                            <button onclick="submit_comment()" type="button" value="1">Post</button>
+                                                        <textarea class="commentar" placeholder="Add a comment..."></textarea>
+                                                        <div class="box_post">
+                                                            <div class="pull-right">
+                                                                <span>
+                                                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
+                                                                    <i class="fa fa-caret-down"></i>
+                                                                </span>
+                                                                <button onclick="submit_comment()" type="button" value="1">Post</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
 
 
                                                 <div class="row">
                                                     <ul
                                                         id="list_comment" class="col-md-12">
-                                                        <!-- Start List Comment 1 -->
                                                         <li class="box_result row">
                                                             <div class="avatar_comment col-md-1">
                                                                 <img src="https://static.xx.fbcdn.net/rsrc.php/v1/yi/r/odA9sNLrE86.jpg" alt="avatar"/>
@@ -99,14 +94,23 @@ $user_data = check_login($conn);
 
                                                             <div class="result_comment col-md-11">
                                                                 <h4>Nath Ryuzaki</h4>
-                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                <p>Lorem Ipsum is simply dummy text of the printing and
+                                                                                                                                    typesetting industry. Lorem Ipsum has been the
+                                                                                                                                    industry's.</p>
                                                                 <div class="tools_comment">
                                                                     <a class="like" href="#">Like</a>
-                                                                    <span aria-hidden="true"> · </span>
+                                                                    <span aria-hidden="true">
+                                                                        ·
+                                                                    </span>
                                                                     <a class="replay" href="#">Reply</a>
-                                                                    <span aria-hidden="true"> · </span>
-                                                                    <i class="fa fa-thumbs-o-up"></i> <span class="count">1</span> 
-                                                                    <span aria-hidden="true"> · </span>
+                                                                    <span aria-hidden="true">
+                                                                        ·
+                                                                    </span>
+                                                                    <i class="fa fa-thumbs-o-up"></i>
+                                                                    <span class="count">1</span>
+                                                                    <span aria-hidden="true">
+                                                                        ·
+                                                                    </span>
                                                                     <span>26m</span>
                                                                 </div>
 
@@ -119,7 +123,7 @@ $user_data = check_login($conn);
                                                 </div>
                                             </div>
                                         </div>
-                                        
+
                                         <a href="post.php">Load post</a>
 
                                     </div>
@@ -132,23 +136,99 @@ $user_data = check_login($conn);
 
 
                         </div>
-                            </div>
-<a href="post.php">Load post</a>
-                            
-                            </div>
-                            
-                            
-                                
-                            </div>
+                    </div>
+                    <a href="post.php">Load post</a>
 
+                </div>
 
-
-
-                            </div>
-                            
 
             </div>
 
 
-        </body>
-    </html>
+        </div>
+
+
+    </div>
+
+
+</body></html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/newsfeed.css">
+</head>
+<body>
+
+<div class="container">
+    <div id="left" class="column">
+        <?php include 'sidebar.php';?>
+    </div>
+
+    <div class="wrapper">
+        <div class="post-wrapper">
+
+        </div>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script type="text/javascript">
+        var start = 0;
+        var limit = 5;
+        var reachedMax = false;
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() == $(document).height - $(window).height())
+            getData();
+    });
+
+    $(document).ready(function () {
+        getData();
+    });
+
+    function getData() {
+        if (reachedMax){
+            return;
+        } 
+
+        $.ajax({
+            url: 'handlers/retrieve.php',
+            method: 'POST',
+            dataType: 'text',
+            data: {
+                getData: 1,
+                start: start,
+                limit: limit
+            }, 
+            success: function(response){
+                if(response == "reachedMax"){
+                    alert('dawdaw');
+                    reachedMax = true;
+                }else {
+                    $(".post-wrapper").append(response);
+                }
+            }
+        });
+        
+    }
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>
+
+
+
