@@ -32,8 +32,10 @@
 			$image_title = mysqli_real_escape_string($db, $_POST['image_title']);
 			$image_text = trim($image_text);
 			$image_title = trim($image_title);
-			
-			
+
+			$fileN = $image;
+			$fileExt = explode('.', $fileN);
+			$fileActExt = strtolower(end($fileExt));
 			$newFileName = uniqid('', true).".".$fileActExt;
 			  // image file directory
 			  $target = "images/".$newFileName;
@@ -50,8 +52,6 @@
 		}
 
   	// Get text
-
-
   }
   $result = mysqli_query($db, "SELECT * FROM images");
 ?>
