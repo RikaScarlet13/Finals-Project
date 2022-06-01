@@ -177,7 +177,7 @@ div.content {
 }
 
 
-/* ============================================== */
+/* ================== */
 
 /* .profilepicture{
   display: flex;
@@ -242,6 +242,41 @@ div.content {
 
 /* SIDEBAR MEDIAQ END */
 
+
+
+
+/* ======================== NEWSFEED ========================  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======================== NEWSFEED ========================  */
 /* NEWSFEED CSS START*/
 
 .nscontainer {
@@ -407,8 +442,8 @@ justify-content: space-between;
 
 .likes-preview{
  font-size: 16px;
-}
 
+}
 
 .likes-comment-share-icons{
 position: relative;

@@ -58,7 +58,7 @@ $user_data = check_login($conn);
             <form action="profile.php" method="post" enctype="multipart/form-data" id="main-form-container">
                 <div class="form-block form-title">
                     <label for="title">Title of the Photo</label>
-                    <input type="text" name="image_title" id="title-field">
+                    <input type="text" name="image_title" id="title-field" required>
                 </div>
                 
                 <div class="form-block form-text">
@@ -68,11 +68,21 @@ $user_data = check_login($conn);
 
                 <div class="form-block form-image">
                     <label for="image">Image</label>
-                    <input type="file" name="image" id="choose-file-btn">
+                    <input type="file" name="image" id="choose-file-btn" required>
+                    <div class="error">
+                        <?php
+                        if(isset($_GET['error'])){
+                            if($_GET['error'] == "FileTypeError"){
+                                echo '<p style="width: 100%; padding: 10px; text-align: center; color: #842029; background-color: #F8D7DA;">File type is not allowed, Please select an image file.</p>';
+                            }
+                        }
+                        ?>
+                        </div>
                     <button type="submit" name="upload" id="upload-btn">Upload</button>
                 </div>
             </form> 
         </div>
+
 
 
 

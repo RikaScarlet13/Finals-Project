@@ -10,22 +10,20 @@
     <script src='./js/register.js'></script>
     <script src='./js/bootstrap.js'></script>
     <link rel="stylesheet" href="./css/bootstrap.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/profile.css">
     <link rel="stylesheet" href="./css/login.css">
     
         
     <title>Home</title>
-    <script src="jquery-3.2.1.min.js"></script>
+
+    
 
 
 </head>
 <body>
     <div class="wrapper">
         <div id="header">
-            
                 <h1>CERVERUS</h1>
-            
-            
         </div>
 
